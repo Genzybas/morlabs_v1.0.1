@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    /* Ensure the dark mode class is applied to the HTML element */
+    --dark-background: #1a1a1a; /* Dark mode background color */
+    --dark-text: #e0e0e0; /* Dark mode text color */
+  }
+  
+  body {
+    /* Default light mode styles */
+    background-color: #ffffff; /* Light mode background color */
+    color: #000000; /* Light mode text color */
+  }
+  
+  /* Dark mode styles */
+  .dark body {
+    background-color: var(--dark-background);
+    color: var(--dark-text);
+  }
+
+  .gradient-text {
+    background: linear-gradient(90deg, #00FF94, #0bc67b, #FF8A65); /* Mostly green to subtle pink/red */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  
+  
+  
+  
+  
